@@ -2,10 +2,10 @@
 # React + Vite
 
 ## React Project "Tabs"
-[ProjectLink](https://vladyslava-buzova.github.io/menu-05/)
+[ProjectLink](https://vladyslava-buzova.github.io/tabs-06/)
 
 ## Figma URL
-[Tabs](https://www.figma.com/file/Qa5rpK8oNbj7rb1ZW7fttX/Menu?type=design&node-id=0-1&mode=design&t=EbnlxWboMcLLKBfF-0)
+[Tabs](https://www.figma.com/file/DrIcAwfJriDTfxUa5fGPZs/Tabs?type=design&node-id=0-1&mode=design&t=Qfcq7sHUQprZlIld-0)
 
 ## Steps
 1. Fetched API to get job information from an external API, set up a loading state, and displayed a message to the user while the data is being fetched.
@@ -32,6 +32,7 @@ node -v
 ```sh
 npm install uuid
 ```
+Since the job data does not have an id, we can install the uuid library to generate unique ids for each job. 
 
 ```js
 import { v4 as uuidv4 } from 'uuid';

@@ -1,13 +1,16 @@
 import React from 'react';
 
-const BtnContainer = ({ jobs }) => {
+const BtnContainer = ({ jobs, setCurrentItem, currentItem }) => {
   return (
     <div className='btn-container'>
-      {jobs.map((job) => {
+      {jobs.map((job, index) => {
         return (
-          <button key={job.id} className="job-btn">
+          <button
+            key={job.id}
+            onClick={() => setCurrentItem(index)}
+            className={index === currentItem? 'job-btn active-btn' : 'job-btn'}
+          >
             {job.company}
-            {/* console.log() */}
           </button>
         )
     })}
