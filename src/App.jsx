@@ -30,7 +30,6 @@ const fetchJobs = async() => {
   
   return (
     <section className="jobs-center">
-      {/* botton control */}
       <BtnContainer
         jobs={jobs} 
         setCurrentItem={setCurrentItem}
